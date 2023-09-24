@@ -11,28 +11,29 @@
     <!-- This setting enables compatability with desktop and mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the title of the document; viewable by web scrapers and screen readers -->
-    <title>Goode's CSC102 Page</title>
+    <title>Simple 1P Blackjack</title>
+    <!-- This is a call to the javascript file containing the game -->
+    <script src="game.js"></script>
 </head>
-<!-- This is the main content of the document -->
-
 <body>
-    <!-- This is the biggest header in bold; there should only be one -->
-    <header>
-	    <h1>Goode's CSC102 Page</h1>
-    </header>
+    <!-- This is the header for the page, there should only be one-->
+    <h1>Blackjack</h1>
     <!-- This is the code for navigation between pages -->
     <nav>
         <a href="./index.html">Home</a><br>
         <a href="./boards.html">Boards</a><br>
         <a href="./game.html">Blackjack</a><br>
     </nav>
-    <!-- An additional header; there can be many of these -->
-    <h2> Here he is </h2>
-    <!-- This is the content of the page. -->
-    <p>
-        <!-- This is the image shown; with alternate text for screenreaders -->
-        <img id="memeImage1" src="robo.jpeg" alt="A low resolution robot with large speakers.">
-    </p>
+    <!-- This is the header for the game-->
+    <h2>Wanna play a game?</h2>
+    <!-- These are the IDs used to import the game results to the HTML page -->
+    <div id="bustRes">17 or better wins!</div>
+    <div id="card1Res">Card 1</div>
+    <div id="card2Res">Card 2</div>
+    <div id="handRes">Hand Total</div>
+    <br>
+    <!-- This is the button that calls the game function -->
+    <button onclick="playCards();">Draw a Hand</button>
     <!-- This is the footer of the page; containing info about UAT in this case -->
     <footer>
         Damian Goode<br>
@@ -40,7 +41,7 @@
         2625 W Baseline Rd<br>
         Tempe, AZ 85283<br>
         <br>
-        <i><small>"Mark, there's bonus Mark"</small></i><br>
+        <i><small>"Hookers not included"</small></i><br>
     </footer>
 </body>
 </html>
