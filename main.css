@@ -1,0 +1,33 @@
+/* Damian Goode | 9/30/2023 */
+
+/* This is the color selection for the background and text colors */
+body{
+    background-color: rgb(230, 230, 250);
+    color: rgb(79, 79, 79);
+}
+
+/* This adjusts the position of the nav menu */
+nav{
+    height: 400px;
+    width: 150px;
+    float: left;
+    padding: 5px;
+    line-height: 35px;
+}
+
+/* This aligns the footer of the page, in this case to the center of the window */
+footer{
+    text-align: center;
+    margin: 150px;
+}
+
+/* This adjusts the position of the robot image */
+#robo{
+    margin-right: 200px;
+}
+
+
+/* This line aligns the header to the center of the window */
+header{
+    text-align: center;
+}
