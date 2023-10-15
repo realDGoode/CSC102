@@ -11,16 +11,16 @@
     <!-- This setting enables compatability with desktop and mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the title of the document; viewable by web scrapers and screen readers -->
-    <title>Simple 1P Blackjack</title>
-    <!-- This is a call to the javascript file containing the game -->
-    <script src="game.js"></script>
+    <title>Goode's CSC102 Page</title>
+    <!-- This refers to the javascript file used to validate the input of the strings -->
+    <script src="validateInput.js"></script>
     <!-- This line calls to the CSS page for design formatting -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- This is the header for the page, there should only be one-->
     <header>
-        <h1>Blackjack</h1>
+        <h1>Strings</h1>
     </header>
     <!-- This is the code for navigation between pages -->
     <nav>
@@ -29,24 +29,23 @@
         <a href="./game.html">Blackjack</a><br>
         <a href="./strings.html">Strings</a><br>
     </nav>
-    <!-- This is the header for the game-->
-    <h2>Wanna play a game?</h2>
-    <!-- These are the IDs used to import the game results to the HTML page -->
-    <div id="bustRes">17 or better wins!</div>
-    <div id="card1Res">Card 1</div>
-    <div id="card2Res">Card 2</div>
-    <div id="handRes">Hand Total</div>
-    <br>
-    <!-- This is the button that calls the game function -->
-    <button onclick="playCards();">Draw a Hand</button>
-    <br>
+    <!-- This is the form that collect the user inputs and sends them to the validateInput file to be validated -->
+    <form id="nameForm">
+        <label for="nameF">First Name:</label>
+        <input type="text" id="nameF" name="nameF"><br><br>
+        <label for="nameL">Last Name:</label>
+        <input type="text" id="nameL" name="nameL"><br><br>
+        <label for="zip">Zipcode:</label>
+        <input type="text" id="zip" name="zip"><br><br>
+        <button type="submit">Submit</button>
+    </form>
     <!-- This is the footer of the page; containing info about UAT in this case -->
     <footer>
         Damian Goode<br>
         University of Advancing Technology<br>
         2625 W Baseline Rd<br>
         Tempe, AZ 85283<br><br>
-        <i><small>"Hookers not included"</small></i><br>
+        <i><small>"Who's blowma?"</small></i><br>
     </footer>
 </body>
 </html>
