@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(230, 230, 250);
+    color: rgb(79, 79, 79);
+}
+
+/* This adjusts the position of the nav menu */
+nav{
+    height: 400px;
+    width: 150px;
+    float: left;
+    padding: 5px;
+    line-height: 35px;
+}
+
+/* This aligns the footer of the page, in this case to the center of the window */
+footer{
+    text-align: center;
+    margin: 150px;
+}
+
+/* This line aligns the header to the center of the window */
+header{
+    text-align: center;
+}
+
+#roboImage{
+    animation-duration: 0s;
+    animation-name: speen;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes speen {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

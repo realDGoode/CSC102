@@ -12,8 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the title of the document; viewable by web scrapers and screen readers -->
     <title>Goode's CSC102 Page</title>
+    <!-- -->
+    <script src="indexEvent.js"></script>
     <!-- This line calls to the CSS page for design formatting -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <!-- This is the main content of the document -->
 <body>
@@ -31,10 +33,14 @@
     <!-- An additional header; there can be many of these -->
     <h2> Here he is </h2>
     <!-- This is the content of the page -->
-    <p>
+    <p id="roboImage">
         <!-- This is the image shown; with alternate text for screenreaders -->
-        <img id="memeImage1" src="robo.jpeg" alt="A low resolution robot with large speakers.">
+        <center>
+            <img id="memeImage1" src="roboImage.jpeg" alt="A low resolution robot with large speakers.">
+        </center>
     </p>
+    <!-- This is the button for the meme image animation -->
+    <input type="button" value="Add Start and Reset Button" onclick="addButtons()">
     <!-- This is the footer of the page; containing info about UAT in this case -->
     <footer>
         Damian Goode<br>
