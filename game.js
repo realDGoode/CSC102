@@ -21,15 +21,15 @@ function playCards(){
     outputRes("card2Res", "Second card is: " + card2);
     //This is the function that outputs the result from the variable "sum" to the function to the HTML page
     outputRes("handRes", "Hand total is: " + sum);
-    //This is the function that calucates the results, win, loss, or blackjack from the game and sends it to the HTML page
-    if (sum == 22 || sum < 17){
-        outputRes("bustRes", "You lost!");
-        }
-    else if(sum == 21){
+    //This is the function that calucates the results as win, loss, or blackjack from the game and sends it to the HTML page
+    if(sum == 21){
         outputRes("bustRes", "Wow, Blackjack!");
         }
     else if (sum <= 20 || sum >= 17){
         outputRes("bustRes", "You Won!");
+        }
+    else if (sum == 22 || sum < 17){
+        outputRes("bustRes", "You lost!");
         }
 }
 //This function translates the results into a format that is read by HTML

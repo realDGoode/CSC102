@@ -23,19 +23,26 @@ header{
     text-align: center;
 }
 
+/* */
+.center{
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+/* */
 #roboImage{
     animation-duration: 0s;
     animation-name: speen;
     animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation-direction: unset;
     animation-timing-function: linear;
 }
 
+/* */
 @keyframes speen {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }

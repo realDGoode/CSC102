@@ -22,10 +22,9 @@ footer{
 }
 
 /* This adjusts the position of the robot image */
-#robo{
+#roboImage{
     margin-right: 200px;
 }
-
 
 /* This line aligns the header to the center of the window */
 header{
