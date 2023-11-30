@@ -1,3 +1,7 @@
+function play() {
+    var audio = new Audio("space.mp3");
+    audio.play();
+  }
 //This is the function that adds the Start and Reset buttons to the index.html page
 function addButtons() {
     console.log("Adding Start and Reset Button");
